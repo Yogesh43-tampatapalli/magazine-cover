@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORTS MAGAZINE COVER</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+        }
+        .cover {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            height: 100vh;
+        }
+        .cover img {
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            object-fit: cover;
+            display: block;
+            
+        }
+        .text-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .title {
+            font-style: italic;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 2%;
+            left: 20%;
+            transform: translateX(-50%);
+           text-decoration: underline;
+           text-decoration-color: rgb(29, 143, 188);
+           text-decoration-thickness: 5%;
+        }
+        .subtitle {
+            font-style: italic;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 2.5%;
+            left: 82%;
+            transform: translateX(-50%);
+            text-decoration: underline;
+            text-decoration-color:rgb(29, 143, 188) ;
+            text-decoration-thickness: 5%;
+        }
+        .content, .content2, .content3 ,.content4,.content5 {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: 1.1em;
+            padding: 10px;
+        }
+         .content, .content2, .content3, .content5  {
+          color: gold;
+        }
+         .content p, .content2 p, .content3 p, .content5 p {
+          color: whitesmoke;
+        }
+        .content {
+            top: 30%;
+            left: 5%;
+        }
+        .content2 {
+            top: 60%;
+            left: 1%;
+        }
+        .content3 {
+            top: 30%;
+            left: 70%;
+        }
+        .content4 {
+            bottom: 2px;
+            left:30%;
+            text-align: center;
+        } 
+        .content4 p {
+            background-color: rgb(29, 143, 188);
+           
+        }
+        .content5 {
+            top: 70%;
+            right:0.5%
+        }
+        .content, .content2, .content3, .content5 {
+             border: 1px solid rgb(29, 143, 188);
+             padding: 15px; 
+             display: inline-block; 
+             background: transparent; 
+        }
+        .content::after, .content2::after, .content3::after,.content5::after {
+            content: "★★★★★★★★";
+            color:gold ;
+            margin-right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img src="virat.pic.jpeg.jpeg" alt="Magazine Cover Image">
+        <div class="title"><h1>Cricket</h1></div>
+        <div class="subtitle"><h1>Today</h1></div>
+        <div class="content">
+            <h2>VIRAT</h2>
+            <p>KOHLI<br>Many a slip<br>between<br>the cup and lies</p>
+        </div>
+        <div class="content2">
+            <h2>The Rise and <br>Rise of</h2>
+            <p>INDIAN CRICKET TEAM</p>
+        </div>
+        <div class="content3">
+            <h2>India's Tour To Australia</h2>
+            <p>A Chance for the Resurgence of the Indian limited overs squad</p>
+        </div>
+        <div class="content4"><h1>VIRAT KOHLI</h1>
+        <p>The Captain of Indain Cricket Team</p></div>
+        <div class="content5"><h2>THE WIND</h2>
+        <p>beneath India's wings</p></div>
+    </div>
+</body>
+</html>
